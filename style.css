@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    /* font-family: ; */
+    font-family: 'Space Mono', monospace;
+}
+
+#calculator-body{
+    height: fit-content;
+    /* width: ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(185, 41%, 84%);
+}
+header{
+    /* border: solid black; */
+    height: 10vh;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;  
+    font-weight: bold;
+  
+}
+
+.content{
+    margin-top: 2rem;
+    height: inherit;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-header{
+    margin-top: 7%;
+    width: 80vw;
+    font-size: 13px;
+    color: hsl(186, 14%, 43%);
+}
+.content-result{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(189, 41%, 97%);
+    height: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.buttons{
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+button{
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 25%;
+    margin: 2%;
+    color: white;
+}
+.buttons .custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+}
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 5%;
+    margin-top: 7%;
+    background-color: hsl(183, 100%, 15%);
+}
+.footer-result{
+    color: white;
+    padding-top: 8%;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer div{
+    margin-top: -4%;
+    width: 80%;
+    /* color:  */
+}
+.footer-result div .result{
+    color: hsl(186, 14%, 43%);
+    
+}
+.footer-result .figure{
+    font-size: 30px;
+}
+.footer-result span{
+    
+    color:hsl(172, 67%, 45%);
+}
+.reset{
+    margin-top: -5%;
+    width: 70vw;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(186, 14%, 43%);  
+}
+
+@media screen and (min-width: 120px){
+    #calculator-body{
+        width: 100vw;
+        height: fit-content;
+    }
+    .content{
+        position: relative;
+        display: flex;
+        width: 55vw;
+        height: 45vh;
+        border-radius: 15px;
+        margin-bottom: 15%;
+    }
+    header{
+        margin-top: 10%;
+    }
+
+    .content-header{
+        margin-top: 1%;
+        width: 20vw;
+        margin-left: -50%;
+        /* margin-bottom: 1.5rem; */
+    }
+    .content-result{
+        width: 40%;
+        padding: 1% 0;
+        margin-bottom: 1.5rem;
+        margin-left: -45%;
+    }
+    .buttons{
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: row;
+        align-items:center;
+        width: 25vw;
+        height: 40vh;
+        margin-left: -45%;
+    }
+    button{
+        background-color: hsl(183, 100%, 15%);
+        border: none;
+        border-radius: 5px;
+        width: 25%;
+        height: 45%;
+        margin: .1%;
+        color: white;
+    }
+    .buttons .custom{
+        background-color: hsl(189, 41%, 97%);
+        color: hsl(186, 14%, 43%);
+    }
+    
+    .footer{
+        width: 22vw;
+        height: 40vh;
+        margin-left: 50%;
+        position: absolute;
+        margin-top: 1.5rem;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-result{
+        font-size: 15px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* css for the elements in the footer */
+    #figure1{
+        margin-top: -20%;
+    }
+    #tip{
+        margin-top: -10%;
+    }
+
+    #total{
+        margin-top: -40%;
+    }
+    #figure{
+        margin-top: -40%;
+    }
+    .footer-result .figure{
+        font-size: 30px;
+    }
+    .reset{
+        width: 20vw;
+        height: 10%;
+    }
+    /* THE END */
+    
+}
