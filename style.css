@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-body{
+*{
     padding: 0;
     margin: 0;
+}
+body{
     font-size: 16px;
     /* font-family: ; */
     font-family: 'Space Mono', monospace;
@@ -9,17 +11,15 @@ body{
 
 #calculator-body{
     height: fit-content;
-    /* width: ; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: hsl(185, 41%, 84%);
 }
-header{
-    /* border: solid black; */
-    height: 10vh;
-    margin-top: 10%;
+ header{
+    margin-top: 5%;
     width: 100%;
     text-align: center;
     letter-spacing: 10px;  
@@ -28,9 +28,9 @@ header{
 }
 
 .content{
-    margin-top: 2rem;
-    height: inherit;
-    width: 100%;
+    margin-top: 5%;
+    height: fit-content;
+    width: 98%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: hsl(0, 0%, 100%);
@@ -39,11 +39,25 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.content-header{
+ 
+ .content-header{
     margin-top: 7%;
     width: 80vw;
     font-size: 13px;
     color: hsl(186, 14%, 43%);
+}
+#inputText{
+    background-color: hsl(189, 41%, 97%);
+    width: 100vw;
+    border: none;
+}
+
+#people{
+    background-color: hsl(189, 41%, 97%);
+    width: 100vw;
+    border: none;
+    display:inline-flex;
+    justify-content:right;
 }
 .content-result{
     width: 80vw;
@@ -51,7 +65,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background-color: hsl(189, 41%, 97%);
+    /* background-color: hsl(189, 41%, 97%); */
     height: 1.5rem;
     padding-left: 5%;
     padding-right: 5%;
@@ -67,10 +81,19 @@ button{
     background-color: hsl(183, 100%, 15%);
     border: none;
     border-radius: 5px;
-    width: 40%;
-    height: 25%;
+    width: 45%;
+    height: 28%;
     margin: 2%;
     color: white;
+}
+
+#custom{
+    border: none;
+    width: 43%;
+    height: 28%;
+    border-radius: 5px;
+    margin: 2%;
+    text-align: center;
 }
 .buttons .custom{
     background-color: hsl(189, 41%, 97%);
@@ -86,14 +109,14 @@ button:hover{
     justify-content: space-around;
     align-items: center;
     width: 90vw;
-    height: 40vh;
-    border-radius: 5%;
-    margin-top: 7%;
+    height: 38vh;
+    border-radius: 10px;
+    margin-top: 4%;
     background-color: hsl(183, 100%, 15%);
 }
 .footer-result{
     color: white;
-    padding-top: 8%;
+    padding-top: 4%;
     width: 90vw;
     display: flex;
     justify-content: space-between;
@@ -102,36 +125,46 @@ button:hover{
 .footer div{
     margin-top: -4%;
     width: 80%;
-    /* color:  */
 }
 .footer-result div .result{
+    
     color: hsl(186, 14%, 43%);
     
 }
 .footer-result .figure{
+border: solid yellow;
+/* height: 10px; */
+width: 100%;
+margin-right: -10%;
     font-size: 30px;
 }
 .footer-result span{
-    
+/* border: solid red; */
+
     color:hsl(172, 67%, 45%);
 }
 .reset{
-    margin-top: -5%;
+    margin-top: -2%;
     width: 70vw;
     background-color: hsl(172, 67%, 45%);
     color: hsl(186, 14%, 43%);  
-}
+} 
 
-@media screen and (min-width: 120px){
+.attribution{
+    width: 90vw;
+    margin-top: 10%;
+}
+@media screen and (min-width: 1024px){
     #calculator-body{
-        width: 100vw;
+        width: 98vw;
         height: fit-content;
     }
+ 
     .content{
         position: relative;
         display: flex;
-        width: 55vw;
-        height: 45vh;
+        width: 65vw;
+        height: 50vh;
         border-radius: 15px;
         margin-bottom: 15%;
     }
@@ -140,76 +173,106 @@ button:hover{
     }
 
     .content-header{
-        margin-top: 1%;
+        margin-top: 2%;
         width: 20vw;
-        margin-left: -50%;
+        margin-left: -62%;
         /* margin-bottom: 1.5rem; */
     }
     .content-result{
-        width: 40%;
+        width: 45%;
         padding: 1% 0;
-        margin-bottom: 1.5rem;
-        margin-left: -45%;
+        margin-top: 2%;
+        margin-bottom: -2%;
+        margin-left: -48%;
     }
+    #inputText{
+        height: 30px;
+        width: 100vw;
+        border: none;
+    }
+    
+    #people{
+        height: 30px;
+        width: 60vw;
+        border: none;
+    }
+    
     .buttons{
+        margin-top: 2%;
         display: flex;
         justify-content:space-evenly;
         flex-direction: row;
         align-items:center;
-        width: 25vw;
-        height: 40vh;
-        margin-left: -45%;
+        width: 30vw;
+        height: 70vh;
+        margin-left: -48%;
+        margin-bottom: 5%;
     }
     button{
         background-color: hsl(183, 100%, 15%);
         border: none;
         border-radius: 5px;
-        width: 25%;
-        height: 45%;
-        margin: .1%;
+        width: 30%;
+        height: 85%;
+        margin: 1.5%;
         color: white;
     }
+    #custom{
+        border: none;
+        width: 30%;
+        height: 68%;
+        border-radius: 5px;
+        margin-left: 2%;
+        text-align: center;
+    }
+    
     .buttons .custom{
         background-color: hsl(189, 41%, 97%);
         color: hsl(186, 14%, 43%);
     }
     
     .footer{
-        width: 22vw;
-        height: 40vh;
+        width: 30vw;
+        height: 45vh;
         margin-left: 50%;
         position: absolute;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         border-radius: 15px;
         display: flex;
         justify-content: space-around;
     }
     .footer-result{
-        font-size: 15px;
+        /* margin-top: 5%; */
+        font-size: 14px;
         color: white;
         display: flex;
+        /* width: 10%; */
         justify-content: space-around;
         align-items: center;
     }
+ 
     /* css for the elements in the footer */
     #figure1{
-        margin-top: -20%;
+        margin-top: 5%;
     }
+
     #tip{
-        margin-top: -10%;
+        /* margin-top: -10%; */
     }
 
     #total{
-        margin-top: -40%;
+        /* margin-top: -40%; */
     }
     #figure{
-        margin-top: -40%;
+        margin-top: 5%;
     }
     .footer-result .figure{
+        margin-top: 10%;
         font-size: 30px;
     }
     .reset{
-        width: 20vw;
+        margin-bottom: -1%;
+        width: 25vw;
         height: 10%;
     }
     /* THE END */
