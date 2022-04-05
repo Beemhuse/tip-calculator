@@ -24,7 +24,7 @@ function calculate(number){
     let result=bill.value/100*total
     let subTotalFormatted=parseFloat(result).toFixed(2); //"12.13"
     result= subTotalFormatted
-    resultTwo=parseFloat(resultTwo).toFixed(2);
+    resultTwo=Math.round(parseFloat(resultTwo).toFixed(2));
     console.log(resultTwo)
     custom()
     

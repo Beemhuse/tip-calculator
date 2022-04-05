@@ -5,7 +5,6 @@
 }
 body{
     font-size: 16px;
-    /* font-family: ; */
     font-family: 'Space Mono', monospace;
 }
 
@@ -65,7 +64,6 @@ body{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    /* background-color: hsl(189, 41%, 97%); */
     height: 1.5rem;
     padding-left: 5%;
     padding-right: 5%;
@@ -132,15 +130,11 @@ button:hover{
     
 }
 .footer-result .figure{
-border: solid yellow;
-/* height: 10px; */
 width: 100%;
 margin-right: -10%;
     font-size: 30px;
 }
 .footer-result span{
-/* border: solid red; */
-
     color:hsl(172, 67%, 45%);
 }
 .reset{
@@ -242,11 +236,9 @@ margin-right: -10%;
         justify-content: space-around;
     }
     .footer-result{
-        /* margin-top: 5%; */
         font-size: 14px;
         color: white;
         display: flex;
-        /* width: 10%; */
         justify-content: space-around;
         align-items: center;
     }
@@ -256,13 +248,6 @@ margin-right: -10%;
         margin-top: 5%;
     }
 
-    #tip{
-        /* margin-top: -10%; */
-    }
-
-    #total{
-        /* margin-top: -40%; */
-    }
     #figure{
         margin-top: 5%;
     }
