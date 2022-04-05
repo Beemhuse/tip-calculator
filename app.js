@@ -61,10 +61,13 @@ let custom=()=>{
     result= subTotalFormatted
 
     displayAnswer(result,resultTwo)
+    
+    resetBtn.addEventListener('click', ()=>{
+        display.innerHTML='$0.00'
+        displayTwo.innerHTML='$0.00'
+        
+    })
 
-    console.log(customValue)
-    console.log(total)
-    console.log(result)
   
   }
 // custom()
